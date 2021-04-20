@@ -1,6 +1,5 @@
 package assignment1;
 
-import java.beans.FeatureDescriptor;
 import java.util.Scanner;
 
 public class offsetArray {
