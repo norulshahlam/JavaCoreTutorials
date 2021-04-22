@@ -64,9 +64,11 @@ Set Interface
   - unordered set of elements
   - only unique values
   - store at most one null value 
+  - non-synchronised
+
 -----------------------
-HashSet
-LinkedHashSet
+HashSet         unordered, less memory, more performance
+LinkedHashSet   ordered, more memory, less performance
 
 
 SortedSet Interface
@@ -78,10 +80,6 @@ TreeSet
   -  fast access and retrieval time
 
 
-Sorting
-Comparable interface
-Comparator interface
-Properties class in Java
 */
 public class intro1 {
   
