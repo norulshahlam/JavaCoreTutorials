@@ -1,4 +1,4 @@
-package Advance.LambdaInterface;
+package Java8.LambdaInterface;
 
 /*
 same as previous exxample, only this is for SAM having argument

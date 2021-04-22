@@ -1,15 +1,9 @@
 package Beginner.WrapperClass;
-
 /*
-A Wrapper class is a class whose object wraps or contains a primitive data types. 
-When we create an object to a wrapper class, it contains a field and in this field, 
-we can store a primitive data types. In other words, we can wrap a primitive value 
-into a wrapper class object.
-Data structures in the Collection framework, such as ArrayList, LinkedList and Vector 
-store only objects (reference types) and not primitive types.
+A Wrapper class is a class whose object wraps or contains a primitive data types. When we create an object to a wrapper class, it contains a field and in this field, we can store a primitive data types. In other words, we can wrap a primitive value into a wrapper class object.
+Data structures in the Collection framework, such as ArrayList, LinkedList and Vector store only objects (reference types) and not primitive types.
 
-The wrapper classes are immutable—you cannot change a wrapped value after the wrapper has
-been constructed. They are also final, so you cannot subclass them.
+The wrapper classes are immutable—you cannot change a wrapped value after the wrapper has been constructed. They are also final, so you cannot subclass them.
  */
 public class BoxingUnboxing {
 

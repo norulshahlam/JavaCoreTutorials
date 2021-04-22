@@ -32,7 +32,10 @@ public class intro1 implements In1
     {
         intro1 t = new intro1();
         t.display();
+        //we can access 'a' cos it is static
         System.out.println(a);
+
+       // a++;  //but we cant change as it is final
     }
 }
 

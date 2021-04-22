@@ -1,4 +1,4 @@
-package Advance.LambdaInterface;
+package Java8.LambdaInterface;
 
 /*
  Why use Lambda Expression?
