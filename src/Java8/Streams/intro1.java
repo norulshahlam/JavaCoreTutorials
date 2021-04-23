@@ -5,14 +5,29 @@ reduce operation applies a binary operator to each element in the stream where t
 
 sum(), min(), max(), count() etc. are some examples of reduce operations. reduce() explicitly asks you to specify how to reduce the data that made it through the stream.
 
-we will show the structured method first before going to functional 
+we will show the structured method first before going to functional. all the below methods does the same thing - calculate total sum
 
 1. Structured approach
 2. functional approach
 3. lambda approach
- 4. method reference - similar to method ref used for System.out.println()) - class=System.out, method=println. so for this case, Integer is a class having a sum method
+4. method reference - similar to method ref used for System.out.println()) - class=System.out, method=println. so for this case, Integer is a class having a sum method
+
+EXplanation for reduce method below :
+
+0 refer to initial values, x = aggregated value, y = next number. y will keep added to x. so the flow will be as follows:
+
+0 + 12 =
+12 + 9 =
+21 + 13 =
+34 + 4 =
+38 + 6 =
+44 + 2 =
+46 + 4 =
+50 + 12 =
+62 + 15 =
+77
 */
-public class Reduce {
+public class intro1 {
   public static void main(String[] args) {
 
     List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
@@ -33,10 +48,11 @@ public class Reduce {
   // 2. functional approach
   private static int getTotal2(List<Integer> numbers) {
 		return numbers.stream()
-		  .reduce(0, Reduce::sum);		
+		  .reduce(0, intro1::sum);		
 	}
-  private static int sum(int a, int b) {
-		return a + b;
+  private static int sum(int aggregate, int nextNumber) {
+    System.out.println(aggregate+" + "+nextNumber+" = ");
+		return aggregate + nextNumber;
 	}
 
   // 3. lambda approach
