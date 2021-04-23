@@ -31,7 +31,6 @@ package Advance.Comparable;
  a) your Student class must implement comparable
  b) override compareTo() to define your sorting logic ie by rollno / marks
  c) use this overridden method by calling sort() 
- 
  */
 
 import java.util.ArrayList;
@@ -39,30 +38,31 @@ import java.util.Collections;
 import java.util.List;
 
 public class intro1 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
-		List<student1> stud = new ArrayList<student1>();
-		stud.add(new student1(1, 55));
-		stud.add(new student1(2, 45));
-		stud.add(new student1(3, 63));
-		stud.add(new student1(4, 92));
-		stud.add(new student1(5, 21));
-
-		System.out.println("before sorting: " + stud);
-
+		List<Student> stud = new ArrayList<Student>();
+		stud.add(new Student(1, 55));
+		stud.add(new Student(2, 45));
+		stud.add(new Student(3, 63));
+		stud.add(new Student(4, 92));
+		stud.add(new Student(5, 21));
+		for(Student t : stud){
+			System.out.println("rollno:"+t.rollno+" marks:"+t.marks);
+		}
     // c) NOTE: class will be modified!
 		Collections.sort(stud); 
-
-		System.out.println("\nTake note after using comparable, class is modified\nAfter sorting: " + stud);
-
+		for(Student t : stud){
+			System.out.println("After sort - rollno:"+t.rollno+" marks:"+t.marks);
+		}
+		
 	}
 }
 // a)
-class student1 implements Comparable<student1> {
+class Student implements Comparable<Student> {
 	int rollno;
 	int marks;
 
-	public student1(int rollno, int marks) {
+	public Student(int rollno, int marks) {
 		super();
 		this.rollno = rollno;
 		this.marks = marks;
@@ -74,13 +74,12 @@ class student1 implements Comparable<student1> {
 	}
 
 	@Override   //b)
-	public int compareTo(student1 s) {
-
+	public int compareTo(Student s) {
+System.out.println("this.marks: "+this.marks+" , marks: "+s.marks);
 		// ternary operator.
 		return this.marks > s.marks ? -1 : this.marks < s.marks ? 1 : 0;
 	}
 } 
-
 /*
  * how it works for: return this.marks > s.marks ? -1 : this.marks < s.marks ? 1 : 0;
  * 

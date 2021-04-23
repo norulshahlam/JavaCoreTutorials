@@ -48,7 +48,7 @@ public class intro1 {
 		Collections.sort(val1, com); // this is user defined sort()
 		
 		//Collections.sort(val1, (o1,o2) -> { return o1%10 > o2%10 ? 1 : -1; }); // another way of defining & using in 1 line. goto below for explanations
-		System.out.println("before sort:"+val1);
+		System.out.println("after sort:"+val1);
 	}
 }
 
@@ -57,7 +57,7 @@ class CompSet implements Comparator<Integer> {
   // overriding the default sort
 	@Override 
 	public int compare(Integer o1, Integer o2) {
-
+System.out.println("o1: "+o1+", o2: "+o2);
     // compare the last digit of each element only by using modulus
 		if (o1 % 10 > o2 % 10) 
 			return 1;

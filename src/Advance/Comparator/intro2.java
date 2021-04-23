@@ -19,18 +19,14 @@ public class intro2 {
     al.add(new Student(101, "Vijay", 23));
     al.add(new Student(106, "Ajay", 27));
     al.add(new Student(105, "Jai", 21));
-
+    for (Student st : al) System.out.println("Before sort: "+st.rollno + " " + st.name + " " + st.age);
     System.out.println("Sorting by Name");
     Collections.sort(al, new sortByName());
-    for (Student st : al) {
-      System.out.println(st.rollno + " " + st.name + " " + st.age);
-    }
+    for (Student st : al) System.out.println("after sort: "+st.rollno + " " + st.name + " " + st.age);
    
     System.out.println("sorting by Age");
     Collections.sort(al, new sortByAge());
-    for (Student st : al) {
-      System.out.println(st.rollno + " " + st.name + " " + st.age);
-    }
+    for (Student st : al) System.out.println("after sort: "+st.rollno + " " + st.name + " " + st.age);
   }
 }
 
@@ -48,6 +44,7 @@ class Student {
 
 class sortByAge implements Comparator<Student> {
   public int compare(Student s1, Student s2) {
+    System.out.println(s1.age+" "+s2.age);
     if (s1.age == s2.age)
       return 0;
     else if (s1.age > s2.age)
