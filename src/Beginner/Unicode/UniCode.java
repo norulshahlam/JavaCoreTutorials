@@ -14,7 +14,7 @@ public class UniCode {
   public static void main(String[] args) {
 
     char c1 = 'D';
-    char c2 = '\u0044'; // same
+    char c2 = '\u0044'; // D
     char c3 = '\u00A9'; // some symbol
 
     System.out.println(c1);

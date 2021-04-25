@@ -1,7 +1,5 @@
 package Collections.Generics;
-
 import java.util.ArrayList;
-
 /*
 Generics means parameterized types. The idea is to allow type (Integer, String, … etc, and user-defined types) to be a parameter to methods, classes, and interfaces. Using Generics, it is possible to create classes that work with different data types.
 
@@ -13,10 +11,11 @@ Object is the superclass of all other classes and Object reference can refer to 
 Java Generics were introduced in JDK 5.0 with the aim of reducing bugs and adding an extra layer of abstraction over types.
  */
 public class intro1 {
-  
+  @SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 
     ArrayList items = new ArrayList();
+
     items.add("hi");
     items.add(3);
     items.add("hola");

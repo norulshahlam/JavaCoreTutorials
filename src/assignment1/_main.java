@@ -33,6 +33,7 @@ public class _main {
 		}
 		// Shah, you Will need to do some adjustment to this code to get the right subset letter based on shifter 
 		// Will require maths to do the calculation
+		@SuppressWarnings("rawtypes")
 		LinkedList list = (LinkedList) modfiedTable;
 
 		for(int i = 0; i < list.size();i++){

@@ -33,6 +33,8 @@ public class intro2 {
 		} else
 			System.out.println("pls enter a char!");
 
+			scanner.close();
+
 	}
 
 }

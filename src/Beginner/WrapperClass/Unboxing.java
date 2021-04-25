@@ -12,36 +12,35 @@ b) Assigned to a variable of the corresponding primitive type.
  */
 public class Unboxing {
 
-	public static void myMethod(int num){
+	public static void myMethod(int num) {
 		System.out.println(num);
-		 }
-		 public static void main(String[] args) {
-				
-				Integer inum = new Integer(100);
-				
-					/*	CASE 1: passed Integer wrapper class object, it 
-					 * would be converted to int primitive type 
-					 * at Runtime
-					 */
-				myMethod(inum);
-				//Case 2: Assignments
-				Integer inum2 = new Integer(5);
-				int num = inum2; //unboxing object to primitive conversion
+	}
 
-				// Case 3: While dealing with collection classes:
-				ArrayList<Integer> arrayList = new ArrayList<Integer>();
-				// unboxing because get method returns an Integer object
-				int num2 = arrayList.get(0); 
-			}
+	@SuppressWarnings({ "unused", "deprecation" })
+	public static void main(String[] args) {
+
+		Integer inum = new Integer(100);
+
+		/*
+		 * CASE 1: passed Integer wrapper class object, it would be converted to int
+		 * primitive type at Runtime
+		 */
+		myMethod(inum);
+		// Case 2: Assignments
+		Integer inum2 = new Integer(5);
+		int num = inum2; // unboxing object to primitive conversion
+
+		// Case 3: While dealing with collection classes:
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		// unboxing because get method returns an Integer object
+		int num2 = arrayList.get(0);
+	}
 }
 /*
-Unboxing:
-What we see:
-
-Integer num2 = new Integer(50);
-int inum = num2;
-What compiler does:
-
-Integer num2 = new Integer(50);
-int inum = num2.intValue();
-*/
+ * Unboxing:
+ * 
+ * What we see: Integer num2 = new Integer(50); int inum = num2;
+ * 
+ * What compiler does: Integer num2 = new Integer(50); int inum =
+ * num2.intValue();
+ */

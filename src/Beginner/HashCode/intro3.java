@@ -14,6 +14,7 @@ hashCode(int value) Method
 The hashCode(int value) is an inbuilt Java Integer Class method which determines a hash code for a given int value. This method is compatible with Integer.hashCode().
 */
 public class intro3 {
+  @SuppressWarnings({"deprecation"})
   public static void main(String[] args)  
     {  
         //Create integer object  

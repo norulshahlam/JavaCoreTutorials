@@ -1,9 +1,9 @@
 package Beginner.Super;
 
 /*
-this lesson shows how super keyword works. super is a special keyword that directs the compiler to invoke the superclass method.
-
-Understand method from child can override parent method if both have same same - method overriding BUT in the case of variables, it is not overriden in sub-class.
+this lesson shows 
+1. how super keyword works. super is a special keyword that directs the compiler to invoke the superclass method.
+2. Understand method from child can override parent method if both have same name - method overriding BUT in the case of variables, it is not overriden in sub-class.
 */
 
 public class intro1 {
@@ -21,7 +21,7 @@ class A {
 
 class B extends A {
   /* int i here override parent int i - 
-  Instance variables are not overriden in sub-class. If you define a variable in your class with the same name as in your super class it's called shadowing of variables inheritance and polymorphism doesn't apply for instance variables.
+  Instance variables are not overriden in sub-class. If you define a variable in your class with the same name as in your super class it's called shadowing of variables inheritance, and polymorphism doesn't apply for instance variables.
   */
 	int i = 4;
 

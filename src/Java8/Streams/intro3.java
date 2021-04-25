@@ -28,6 +28,7 @@ forEach(), reduce(), collect(),  are terminal operations
 */
 
 public class intro3 {
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     List<String> courses = List.of("Spring", "Spring Boot", "API" , "Microservices","AWS", "PCF","Azure", "Docker", "Kubernetes");
    

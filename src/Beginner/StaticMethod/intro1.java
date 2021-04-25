@@ -1,20 +1,22 @@
 package Beginner.StaticMethod;
 /*
-When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object. For example, in below java program, we are accessing static method printAdd() without creating any object of Calculator class.
+When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object. For example, in below java program, we are accessing 
+
+1. static method printAdd() & printHello() without creating any object of Calculator class but
+2. have to create obj first of Calculator to use printMinus()
 */
 public class intro1 {
   public static void main(String args[]) {
 
-    // static method - call this way if within the main class
+    // 1. static method - call this way if within the main class
     printHello();
 
-    // static method - call this way if outside the main class
+    // 1. static method - call this way if outside the main class
     Calculator.printAdd(2, 3);
 
-    // instance method - ,ust create obj then call its method
+    // 2. instance method - create obj then call its method
     Calculator c = new Calculator();
     c.printMinus(2, 1);
-
   }
   //static method
   public static void printHello() {

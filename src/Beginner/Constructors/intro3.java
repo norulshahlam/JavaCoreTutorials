@@ -1,6 +1,6 @@
 package Beginner.Constructors;
 /*
-alternative way to assign values in default constructor if you dont  value in the global variable.
+alternative way to assign values in default constructor if you dont have value in the global variable.
 */
 class Test {
   int a;  // 2. u dont assign any value here so,

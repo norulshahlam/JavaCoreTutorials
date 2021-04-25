@@ -12,5 +12,6 @@ public class mainInput {
 		String output = new offsetArray().encoder(plainText);
 		
 		System.out.println("encoded message is "+output);
+		input.close();
 	}
 }

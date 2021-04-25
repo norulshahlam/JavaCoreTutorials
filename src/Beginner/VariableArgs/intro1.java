@@ -15,7 +15,7 @@ public class intro1
 		int total=0;
 		for(int x:numbers)
 		total=total+x;
-		System.out.println(total/numbers.length);
+		System.out.println("total sum of number:"+total+", total element: "+numbers.length);
 	}
 }
 

@@ -1,10 +1,8 @@
 package Beginner.StaticVariable;
-
 /*
 static var means variable is shared among all obj of the same class. if any object changes that static variable, it will affect other object too
 
-instance variables is th eopposite - has its own copy of variable
-aka fields/member variables
+instance variables is th opposite - has its own copy of variable aka fields/member variables
  */
 class employee {
 	int id;
@@ -34,7 +32,7 @@ public class intro1 {
 		System.out.println(a);
 		System.out.println(b); 
 
-    System.out.println("after changing a static variable");
+    System.out.println("after changing a static variable CEO");
 
     // we try to change the ceo from a. which also change ceo from b indirectly bcos of static var
 		a.CEO = "bob"; 

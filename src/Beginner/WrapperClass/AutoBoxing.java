@@ -16,7 +16,7 @@ public class AutoBoxing {
 
 		System.out.println(num);
 	}
-
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// CASE 1: passed int (primitive type), it would be converted to Integer object at Runtime
 		myMethod(2);

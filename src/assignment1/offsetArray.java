@@ -94,6 +94,7 @@ public class offsetArray {
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the offset char: ");
 		offsetChar = input.nextLine();
+		input.close();
 		return offsetChar;
 
 	}

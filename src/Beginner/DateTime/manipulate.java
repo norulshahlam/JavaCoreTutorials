@@ -5,11 +5,8 @@ import java.time.Month;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-/*
-how to take a date and manipulate it
-*/
+/*	how to take a date and manipulate it	*/
 public class manipulate {
-
 	public static void main(String[] args) {
 		
 		//the time and date now
@@ -31,6 +28,11 @@ public class manipulate {
 		
 		ZonedDateTime currentTime1 = ZonedDateTime.now();
 		//zone id can be found in https://www.mkyong.com/java8/java-display-all-zoneid-and-its-utc-offset/
+		/*
+		2 way to get diff time zone
+		1. get timezone direct
+		2. get curr timexone and change to other timezone
+		*/
 		ZonedDateTime indiaTimeDate = ZonedDateTime.now(ZoneId.of("Indian/Mayotte"));
 		ZonedDateTime newYorkDateTime = currentTime1.withZoneSameInstant(ZoneId.of("America/New_York"));
 
@@ -47,16 +49,6 @@ public class manipulate {
 		System.out.println("days: "+period.getDays());
 		System.out.println("months: "+period.getMonths());
 		System.out.println("year: "+period.getYears());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(period);			
 	}
-
 }

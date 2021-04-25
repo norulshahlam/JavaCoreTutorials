@@ -6,7 +6,7 @@ package Advance.ErrorHandling;
 2. with multiple catch, we can use diff catch to handle diff types of error when triggered. or use a generic method - (Exception e) 
 */
 public class MultipleTryCatch {
-
+  @SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		try {

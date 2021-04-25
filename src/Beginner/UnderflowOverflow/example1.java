@@ -1,9 +1,8 @@
 package Beginner.UnderflowOverflow;
-
 /*
-if we try to put a val larger than the max val, u will get an overflow value where it just skips back to the min number which is not what u want. same goes to (min val - 1). important convept to be aware of
+if we try to put a val larger than the max val, u will get an overflow value where it just skips back to the min number which is not what u want. same goes to (min val - 1). important convept to be aware of..
 
-if u also try to add a number to an alr max val in a variable, it will show compile time error
+if u also try to add a number to an alr max val in a variable, it will show compile time error??
 */
 
 public class example1 {

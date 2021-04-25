@@ -82,7 +82,7 @@ TreeSet
 
 */
 public class intro1 {
-  
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
 
     /*

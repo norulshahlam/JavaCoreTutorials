@@ -5,7 +5,7 @@ package Intermediate.Objects;
  * 	for this example, we use Employee class. alex, john,peter is an object
  */
 public class intro1 {
-
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		Employee alex = new Employee();

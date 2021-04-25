@@ -46,6 +46,6 @@ public class intro1 {
     values.forEach(System.out::println);
 
     System.out.println("\n5... ");
-    values.forEach(i->System.out.println(i));
+    values.forEach(k->System.out.println(k));
   }
 }

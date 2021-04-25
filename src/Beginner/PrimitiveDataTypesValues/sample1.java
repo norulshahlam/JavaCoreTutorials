@@ -3,6 +3,8 @@ package Beginner.PrimitiveDataTypesValues;
 /*
 A primitive data type specifies the size and type of variable values, and it has no additional methods.
 
+On the other hand, Object types like Integer, String, has methods
+
 There are eight primitive data types in Java:
 
 DataType	Size	    Description
@@ -14,8 +16,6 @@ float   	4 bytes	  Stores fractional numbers. Sufficient for storing 6 to 7 deci
 double  	8 bytes 	Stores fractional numbers. Sufficient for storing 15 decimal digits
 boolean	  1 bit	    Stores true or false values
 char	    2 bytes	  Stores a single character/letter or ASCII values
-
-
 */
 public class sample1 {
 

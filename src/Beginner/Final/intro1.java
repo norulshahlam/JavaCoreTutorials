@@ -1,22 +1,20 @@
 package Beginner.Final;
-
 /*
-
 this class demonstrates final var, method, class
 in summary,
 final var - cant make any changes
-final method - cant inherit method
+final method - cant overide parent method
 final class - cant inherit class
 */
 public class intro1 {
-
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		B objB = new B();
 		objB.show();
 		
 		final int i=5;
     //once var is final, no changes can be made. any changes made will give compile time error
-		//i++;
+	//i++;
 
 	}
 }

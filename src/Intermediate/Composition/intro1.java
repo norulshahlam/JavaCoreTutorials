@@ -10,6 +10,7 @@ Also if there is any change in the other class implementation, for example getSa
 Composition allows creation of back-end class when it’s needed, for example we can change Person getSalary method to initialize the Job object at runtime when required.
 */
 public class intro1 {
+    @SuppressWarnings("unused")
   public static void main(String[] args) {
     Person person = new Person();
     long salary = person.getSalary();

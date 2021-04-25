@@ -26,5 +26,6 @@ class WhileLoop {
 		}
 
 		System.out.println("Out of loop");
+		input.close();
 	}
 }

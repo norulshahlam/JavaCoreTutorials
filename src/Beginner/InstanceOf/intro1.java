@@ -1,8 +1,6 @@
 package Beginner.InstanceOf;
-
 /*
 instanceof operator is good programming practice to find out whether a cast will succeed before attempting it.
-
 */
 class Parent {
 }

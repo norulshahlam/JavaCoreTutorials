@@ -16,6 +16,9 @@ public class manipulate2 {
 		
 		//Once you have a LocalDate object, you can find out the year, month, and	day with the methods getYear, getMonthValue, and getDayOfMonth:
 		System.out.println(weddingdate.getMonthValue());
+		System.out.println(weddingdate.getDayOfMonth());
+		System.out.println(weddingdate.getDayOfYear());
+		System.out.println(weddingdate.getDayOfWeek());
 		
 		//wht is the date 1000 days after your wedding?
 		LocalDate thousandDays = weddingdate.plusDays(1000);

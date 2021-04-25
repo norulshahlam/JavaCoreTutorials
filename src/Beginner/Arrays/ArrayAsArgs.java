@@ -1,9 +1,7 @@
 package Beginner.Arrays;
-
 /*
 How you manipulate the elements in array. here we try to add 5 to every element
  */
-
 public class ArrayAsArgs 
 {
 	public static void main(String[] args) 

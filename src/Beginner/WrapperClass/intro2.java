@@ -4,11 +4,12 @@ import java.util.ArrayList;
 
 /*  this class demonstrates the use of primitive datatype in wrapper class in collections */
 public class intro2 {
-
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		
 		/*  we are now creeating an ArrayList without datatype defined. This is considered not type-safe. this is also called raw type  */
 		ArrayList salary = new ArrayList();
+
 		salary.add(2);
 		salary.add(3);
 		salary.add("hi");

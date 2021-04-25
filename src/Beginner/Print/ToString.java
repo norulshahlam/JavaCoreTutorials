@@ -2,9 +2,7 @@ package Beginner.Print;
 
 /*
 Another important method in Object is the .toString() method that returns a string representing the value of this object.
-
 If you want to represent any object as a string, toString() method comes into existence.
-The toString() method returns the string representation of the object.
 If you print any object, java compiler internally invokes the toString() method on the object. 
 So overriding the toString() method, returns the desired output, 
 it can be the state of an object etc. depends on your implementation.

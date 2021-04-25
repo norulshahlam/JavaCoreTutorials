@@ -28,7 +28,7 @@ https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist
 import java.util.LinkedList;
 
 public class intro1 {
-
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		LinkedList<String> val = new LinkedList<String>();

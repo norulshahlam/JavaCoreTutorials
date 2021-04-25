@@ -1,16 +1,17 @@
 package Intermediate.ReferenceVariable;
 
 public class intro2 {
+
  	// Here i is an Instance variable.		 
 	int i;
-
+	
 	public static void main(String[] args) {
 		// Here i is an Instance variable.		 
 		test t1 = new test();
 		System.out.println("Value before calling method1: " + t1.i);
 
 	}
-
+	@SuppressWarnings("unused")
 	  //  Here j is a method parameter. And k is a local variable.
 		void method1(int j) {
 		int k;

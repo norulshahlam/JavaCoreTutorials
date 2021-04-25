@@ -58,16 +58,13 @@ public class intro2 {
 		z.setJ("ddd");
 		System.out.print("NEW val of z is: " ); z.PrintMe();
 		
-    //although val of z has change, hashcode remains same 
+    //although val of z has change, hashcode remains same bcos they are same reference
 		System.out.println("is z=y?: "+z.equals(x)); 
 		
     //but gives diff hashcode as it is created as diff obj, although the values are the same
 		System.out.println("\nx is: "+x.hashCode());	
 		System.out.println("y is: "+y.hashCode());
     //here z is the same as x as it points to the same obj
-		System.out.println("z is: "+z.hashCode()); 
-		
-		
-		
+		System.out.println("z is: "+z.hashCode()); 		
 	}
 }

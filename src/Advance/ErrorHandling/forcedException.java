@@ -33,7 +33,7 @@ public class forcedException {
 		}
 		finally {
 			System.out.println("end of program");
+			scanner.close();
 		}
-		scanner.close();
 	}
 }

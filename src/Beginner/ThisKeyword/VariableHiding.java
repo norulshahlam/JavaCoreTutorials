@@ -4,36 +4,34 @@ package Beginner.ThisKeyword;
 when a local var has the same name as instance var, the local var hides / repalces the instance var
 
 'this' lets you refer directly to the instance var 
-‘this’ is a reference variable that refers to the current object.
+‘this’ is a reference variable that refers to the local object.
 */
-class A{
+class A {
 	String i = "global";
 
-	public void display1(){
+	public void display1() {
 		String i = "local";
 		System.out.println(i);
-}
-}
-
-class B{
-	String i ="global";
-	public void display() {
-		String i="local";		
-    System.out.println(this.i);
 	}
 }
+@SuppressWarnings("unused")
+class B {
+	String i = "global";
 
+	public void display() {
+		String i = "local";
+		System.out.println(this.i);
+	}
+}
 public class VariableHiding {
-
 	public static void main(String[] args) {
-		
-		A A = new A();
-    //this method doesnt use 'this' so it uses the local variable, inside the method
-		A.display1();	
-		
-		B B = new B();
-    //this method uses 'this' so it uses the global variable declared in the class itself
-		B.display();
 
+		A A = new A();
+		// this method doesnt use 'this' so it uses the local variable, inside the method
+		A.display1();
+
+		B B = new B();
+		// this method uses 'this' so it uses the global variable declared in the class itself
+		B.display();
 	}
 }

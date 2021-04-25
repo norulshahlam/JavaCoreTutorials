@@ -6,17 +6,17 @@ Data structures in the Collection framework, such as ArrayList, LinkedList and V
 The wrapper classes are immutable—you cannot change a wrapped value after the wrapper has been constructed. They are also final, so you cannot subclass them.
  */
 public class BoxingUnboxing {
-
+	@SuppressWarnings({"unused","deprecation"})
 	public static void main(String[] args) {
 	
 		int a = 1;
 		int b = 2;
-		
-		Integer A = new Integer(a);	//boxing
+
+		Integer A = new Integer(a);	//manual boxing
 		Integer B = b;	//auto boxing
 		
-		int c = B.intValue();	//un boxing
-		int d = B;	//auto un boxing
+		int c = B.intValue();	//manual unboxing
+		int d = B;	//auto unboxing
 		
 		String str = "123";
 		//to convert string to int; wrapper class is needed
@@ -24,7 +24,8 @@ public class BoxingUnboxing {
 		int n = Integer.parseInt(str);
     //once conv to int, u can make math ops
 		System.out.println(n+1);  //123 + 1 = 124
-		
+		 //double check its datatype
+		 System.out.println(((Object) str).getClass().getName());
+		 System.out.println(((Object) n).getClass().getName());
 	}
-
 }

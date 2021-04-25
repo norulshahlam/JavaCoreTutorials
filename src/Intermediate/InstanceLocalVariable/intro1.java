@@ -5,13 +5,14 @@ local vs instance varaibles
 https://www.tutorialspoint.com/java/java_variable_types.htm
 */
 public class intro1 {
+
   public static void main(String[] args) {
 
     Student A = new Student();
     System.out.println(A.name);
 	}
 }
-
+@SuppressWarnings("unused")
 class Student{
   // this instance variable (or global variable) is visible for any child class.
   String name = "defaultname";

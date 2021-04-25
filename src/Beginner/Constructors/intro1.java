@@ -35,6 +35,7 @@ d) However, then you are not able to set initial values for object attributes.
 
 public class intro1 
 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		//this will call default constructor as no value is assigned upon creation

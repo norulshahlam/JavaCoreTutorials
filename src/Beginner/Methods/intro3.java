@@ -30,5 +30,6 @@ public class intro3 {
      * orange
      */
     orange1.printSomething(name);
+    input.close();
   }
 }
