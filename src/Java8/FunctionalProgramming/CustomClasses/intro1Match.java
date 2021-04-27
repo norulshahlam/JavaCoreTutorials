@@ -44,5 +44,7 @@ public class intro1Match {
     System.out.println(courses.stream().noneMatch(reviewScoreLessThan90Predicate)); // 2.
     System.out.println(courses.stream().anyMatch(reviewScoreLessThan90Predicate)); // 3.
     System.out.println(courses.stream().anyMatch(reviewScoreGreaterThan95Predicate));
+
   }
+  
 }
