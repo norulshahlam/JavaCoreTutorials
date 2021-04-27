@@ -9,7 +9,7 @@ public class AnonymouseInner {
 	public static void main(String[] args) {
 
     //this is the part where you 1 2 override
-		E e = new E(){ 
+		E e = new E(){
 			public void show(){
 				System.out.println("wazzup");
 			}

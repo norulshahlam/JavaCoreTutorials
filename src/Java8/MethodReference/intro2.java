@@ -1,8 +1,7 @@
 package Java8.MethodReference;
 
 /*
-same as earlier lesson but this time we will print only even numbers using structured apporach firist, then functional approach
-
+same as earlier lesson but this time we will print only even numbers using structured apporach first, then functional approach
 
 1. structured approach
 2. functional approach - use method (isEven method in intro class) as argument.

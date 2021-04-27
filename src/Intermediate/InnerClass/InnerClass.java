@@ -24,8 +24,10 @@ public class InnerClass {
 		outer a = new outer(); 
 		a.show();
 
-    //use this if inner class is not static
+    //use this if inner class is not defined
 		//outer.inner b = new outer.inner(); 
+		//
+		// to access inner class, u have to instantiate the obj of outer class first, then use that as reference
 		outer.inner b = a.new inner();
 		b.show();
 	}

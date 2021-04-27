@@ -1,4 +1,4 @@
-package Intermediate.Annotataions;
+package Intermediate.Annotations;
 
 
 /* 
@@ -16,7 +16,7 @@ class animal {
 class dog extends animal {
 
 	/*	
-  we intend to override parent method but bcos of typo, (apple, not checkClass) this has become a new method. By @override, compiler will show that this method is not found in parent class	
+  we intend to override parent method but bcos of typo, (CheckClass, not checkClass) this has become a new method. By @override, compiler will show that this method is not found in parent class	
   */
 
 	void CheckClass() { 		

@@ -1,5 +1,4 @@
 package Advance.Threads;
-
 /*
 Threads allows a program to operate more efficiently by doing multiple things at the same time.
 
@@ -32,7 +31,8 @@ class test1 extends Thread {
       System.out.println("Thread ID: " + Thread.currentThread().getId() + ", Value: " + i);
     }
     try {
-      Thread.sleep(1000); // adjust here to ensure they are in concurrent, not sequential
+      // adjust here to ensure they are in concurrent, not sequential
+      Thread.sleep(1000); 
     } catch (InterruptedException e) {
       e.printStackTrace();
     }

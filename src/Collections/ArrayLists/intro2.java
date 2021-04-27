@@ -19,7 +19,7 @@ public class intro2 {
 			System.out.println(j);
 	
 		
-      //List allow element to be sorted by natural - increasing order
+      //List allow element to be sorted by natural order - increasing order
 		Collections.sort(values); 
 		System.out.println("\nafter sort");
 		for(Object k : values)

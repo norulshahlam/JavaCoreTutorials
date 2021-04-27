@@ -1,6 +1,7 @@
 package Java8.FunctionalProgramming.FunctionalInterfaces;
+
 /*
-approach 1 has only 1 diff - the behaviour. the rest contains many duplicates 
+approach 1 has only 1 diff - the behaviour/logic. the rest contains many duplicates 
 
 appoach 2 - we pass the logic / behaviour of the method as an argument (in the 2nd arg) so we just use diff logic for each arg, avoiding any repetitions. this is called behaviour parameterization
 */
@@ -33,8 +34,8 @@ public class BehaviourParameterization {
     filterAndPrint(numbers, x -> x % 2 != 0); // odd
     filterAndPrint(numbers, x -> x % 3 == 0); // divisible by 3
 
-    List<Integer> squared2 = mapCreateList(numbers, x -> x * x);
-    List<Integer> cubed2 = mapCreateList(numbers, x -> x * x * x);
+    List<Integer> squared2 = mapCreateList(numbers, x -> x * x);  // square & add to li
+    List<Integer> cubed2 = mapCreateList(numbers, x -> x * x * x);  // cube & add to list
 
     System.out.println(squared);
     System.out.println(cubed);

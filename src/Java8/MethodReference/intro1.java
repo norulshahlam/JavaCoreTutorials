@@ -4,7 +4,7 @@ package Java8.MethodReference;
 
 1. structured approach
 2. functional approach - use method (print method in intro1 class) as argument.
-3. method reference - since the arg for (2) is class::method, we can simply add the print statement inside it. where class=System.out, method=print.  We dont need to creeate the method in (2). tjis results in shorter code
+3. method reference - since the arg for (2) is class::method, we can simply add the print statement inside it. where class=System.out, method=print.  We dont need to create the method in (2). this results in shorter code
 */
 import java.util.List;
 public class intro1 {

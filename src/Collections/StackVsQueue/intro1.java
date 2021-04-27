@@ -18,7 +18,7 @@ stack does not have variants.
 
 Queue 
 follows FIFO mechanism to add and remove elements.
-two different ends are used to insert and delete the elements.
+two different ends are used to insert and delete the elements - pop at front, push at back
 uses two pointers to refer front and the rear end of the queue.
 enqueue and dequeue.
 implementation is tricky.
@@ -32,14 +32,14 @@ public class intro1 {
 		st.add(9);
 		st.add(2);
 		st.add(1);
-    st.forEach(i->System.out.println("Stack:  "+i));
+		st.forEach(i -> System.out.println("Stack:  " + i));
 
 		Queue<Integer> q = new ArrayDeque<Integer>();
 		q.add(4);
 		q.add(9);
 		q.add(2);
 		q.add(1);
-    q.forEach(i->System.out.println("ArrayDeque:  "+i));
-	
+		q.forEach(i -> System.out.println("ArrayDeque:  " + i));
+
 	}
 }

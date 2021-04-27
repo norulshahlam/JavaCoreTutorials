@@ -65,7 +65,7 @@ class Student implements Comparable<Student> {
 	public Student(int rollno, int marks) {
 		super();
 		this.rollno = rollno;
-		this.marks = marks;
+		this.marks = marks; 
 	}
 
 	@Override

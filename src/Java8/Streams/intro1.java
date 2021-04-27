@@ -61,7 +61,7 @@ public class intro1 {
     .reduce(0, (x,y)->x+y);
   }
 
-  // 4. method reference
+  // 4. static method reference
   private static int getTotal4(List<Integer> numbers) {
     return numbers.stream()
     .reduce(0, Integer::sum);

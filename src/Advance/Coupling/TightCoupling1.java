@@ -1,5 +1,4 @@
 package Advance.Coupling;
-
 /* 
 Tightly coupled object is an object that needs to know quite a bit about other objects and are usually highly dependent on each other's interfaces. Changing one object in a tightly coupled application often requires changes to a number of other objects. In a small application we can easily identify the changes and there is less chance to miss anything. But in 
 large applications these inter-dependencies are not always known by every programmer and there is chance of overlooking changes.
@@ -9,6 +8,7 @@ public class TightCoupling1 {
 	public static void main(String args[]) {
 
 		Journey j = new Journey();
+		// 3. and change here too
 		j.startJourney();
 
 	}

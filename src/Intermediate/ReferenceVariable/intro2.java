@@ -1,5 +1,7 @@
 package Intermediate.ReferenceVariable;
-
+/*
+insrtance vs local variable
+*/
 public class intro2 {
 
  	// Here i is an Instance variable.		 
@@ -12,7 +14,7 @@ public class intro2 {
 
 	}
 	@SuppressWarnings("unused")
-	  //  Here j is a method parameter. And k is a local variable.
+	  // j - method parameter, k - local variable.
 		void method1(int j) {
 		int k;
 		i = j;
@@ -22,7 +24,7 @@ public class intro2 {
 	}
 }
 class test {
-	//below variable is static variable means it is class level variable
+	// static variable - class level variable
 	static int i;
 
 	public static void main(String[] args) {

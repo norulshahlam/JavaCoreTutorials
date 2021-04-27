@@ -32,16 +32,16 @@ import java.util.*;
 public class intro1 {  
   public static void main(String args[]) {  
           
-    //create empty vector of size 3 
+    //create empty vector of capacity 3 
     Vector<String> vec = new Vector<String>(3);	
-    System.out.println("size: "+vec.size()+"capacity: "+vec.capacity());
+    System.out.println("size: "+vec.size()+", capacity: "+vec.capacity());
     vec.add("apple");	 //maintain insertion order
     vec.add("banana");
     vec.add("carrot");
     vec.add("durian");
     vec.add("eggfruit");
     
-    System.out.println("size: "+vec.size()+"capacity: "+vec.capacity());
+    System.out.println("size: "+vec.size()+", capacity: "+vec.capacity());
     //capacity is the available space given to the current array. it will 2X if exceed current capacity. once size exceed initial capacity, it will inc to 100% of the initial capacity ie times 2 from the initial size given by user during creation
     
     System.out.println("elements: "+vec);
@@ -51,7 +51,7 @@ public class intro1 {
     vec.add(0, "zebra");	//add element to a specific index
     System.out.println("newl elements: "+vec);
     
-    System.out.println("size is: "+vec.size()+"capacity is: "+vec.capacity());
+    System.out.println("size is: "+vec.size()+", capacity is: "+vec.capacity());
               
   }  
 }

@@ -20,14 +20,17 @@ In HashSet, the argument passed in add(Object) method serves as key K.
 Java internally associates dummy value for each value passed in add(Object) method.	
 HashMap no concept of dummy value,
 
-HashSet internally uses HashMap object to store or add the objects.	HashMap internally uses hashing to store or add objects
+HashSet internally uses HashMap object to store or add the objects.	
+HashMap internally uses hashing to store or add objects
 
 HashSet slower
 HashMap faster	
 
 HashSet use add() method for add or storing data	 
 HashMap use put() method for storing data, 
-HashSet is a set, e.g. {1, 2, 3, 4, 5, 6, 7},	HashMap is a key -> value pair(key to value) map, e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
+
+HashSet is a set, e.g. {1, 2, 3, 4, 5, 6, 7},	
+HashMap is a key -> value pair(key to value) map, e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
 
 */
 public class intro1 {

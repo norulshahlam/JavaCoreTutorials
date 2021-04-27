@@ -1,4 +1,4 @@
-package Intermediate.Objects;
+package Beginner.Objects;
 
 /*	object : copy of a class
  * 	class : template/blueprint for an object. contains data and method
@@ -15,7 +15,6 @@ public class intro1 {
 		alex.salary = 30000;
 		alex.bonus = 20000;
 		alex.CalTotalPay();
-
 	}
 }
 

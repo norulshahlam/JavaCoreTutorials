@@ -20,9 +20,16 @@ we will learn about Supplier & UnaryOperator, BiPredicate, BiFunction, BiConsume
 So, until now, we were talking about taking an input and giving an output back or taking an input and giving no output back.
 
 Taking an input and giving an output is a function. 
-Taking an input but no output, returning void as an output is a consumer.
+Taking an input but no output (returning void) is a consumer.
 
 2. Supplier is the opposite. Supplier is the situation where you don't have any input. So, you won't have any parameters as input and what do you want to do is, we'd want to return something back. 
+
+Recap - 
+
+predicate - has a method that takes in 1 input & returns bolean
+Consumer - has a method that takes in 1 input and process it without any return (void)
+function - has a method that takes in 1 input, process and return the result.
+binary  - has a method that takes in 2 input, process and return the result.
 
 3. UnaryOperator
 
@@ -30,10 +37,9 @@ A binary operator operates on two elements, two parameters of same type and retu
 
 The Unary operator, on the other side, will actually take one parameter as the input; unary, one, and it returns the result of the same type as the output.
 
+
 4. BiPredicate - similar to predicate, takes in 2 input (instead of 1) & returns bolean
-
 5. BiFunction -  similar to Function - takes in 2 input (instead of 1) process and return the result.
-
 6. BiConsumer - similar to Consumer - takes in 2 input (instead of 1) and process it without any return (void)
 */
 public class SupplierUnaryOperator {
@@ -48,30 +54,30 @@ public class SupplierUnaryOperator {
     Consumer<Integer> sysoutConsumer = x -> System.out.println(x);
     BinaryOperator<Integer> sumBinaryOperator = (x, y) -> x + y;
 
-    //2. No input > Return Something
+    //2. Supplier - No input > Return Something
 		Supplier<Integer> randomIntegerSupplier = () -> {
       Random random = new Random();
 			return random.nextInt(1000);
     };
     System.out.println(randomIntegerSupplier.get());
 
-    //3. UnaryOperator
+    //3. UnaryOperator - 1 input
     UnaryOperator<Integer> unaryOperator = x -> 3 * x;
 		System.out.println(unaryOperator.apply(10));
 
-    //4. BiPredicate
+    //4. BiPredicate - 2 input
     BiPredicate<Integer, String> biPredicate = (number,str) -> {
 			return number<10 && str.length()>5;
 		};
 		System.out.println(biPredicate.test(10, "in28minutes"));
 
-    //5. BiFunction
+    //5. BiFunction - 2 function input
 		BiFunction<Integer, String, String> biFunction = (number,str) -> {
 			return number + " " + str;
 		};
 		System.out.println(biFunction.apply(15, "in28minutes"));
 
-    //6. BiConsumer
+    //6. BiConsumer - 2 input
     BiConsumer<Integer, String> biConsumer = (s1,s2) -> {
 			System.out.println(s1);
 			System.out.println(s2);

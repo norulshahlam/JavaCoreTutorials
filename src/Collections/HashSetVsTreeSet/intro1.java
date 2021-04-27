@@ -14,17 +14,17 @@ public class intro1 {
 	public static void main(String[] args) {
 
 		Set<Integer> ts = new TreeSet<Integer>(); 
-		ts.add(11); //sort by asc
+		ts.add(11); //auto sort by asc
 		ts.add(4);
 		ts.add(2);  
 		ts.add(9);
 		ts.add(5);
-		ts.add(2);  // no duplicate
-	//	ts.add(null); doesnt allow null
-		Set<Integer> hs = new HashSet<Integer>(); 
-		hs.add(11); //sort by asc
-		hs.add(4);
+		ts.add(2);  // error - no duplicate
+	//	ts.add(null); error - no null
 
+		Set<Integer> hs = new HashSet<Integer>(); 
+		hs.add(11); //auto sort by asc
+		hs.add(4);
 		hs.add(2);
 		hs.add(9);
 		hs.add(5);

@@ -24,8 +24,9 @@ public class intro1 {
 		// 1. The try statement allows you to define a block of code to be tested for errors while it is being executed.
 		try {
 
-      // this line gives error during compile time. program will stop here, and will go to 'catch'
+    
 
+			// 1b. this triggers exception n wil skip all code below n go to 'catch'
 			int k = 3 / 0; 
 			System.out.println(k);
 			System.out.println("in try");
@@ -46,5 +47,4 @@ public class intro1 {
 		System.out.println("end of code");
 
 	}
-
 }

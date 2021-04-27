@@ -3,11 +3,8 @@ package Intermediate.ReferenceVariable;
 Understanding Reference variable 
 
 1. Reference variable is used to point object/values.
-
 2. Classes, interfaces, arrays, enumerations, and, annotations are reference types in Java. Reference variables hold the objects/values of reference types in Java.
-
 3. Reference variable can also store null value. By default, if no object is passed to a reference variable then it will store a null value.
-
 4. You can access object members using a reference variable using dot syntax.
 
 */

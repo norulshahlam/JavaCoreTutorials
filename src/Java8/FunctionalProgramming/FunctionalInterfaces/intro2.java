@@ -1,6 +1,8 @@
 package Java8.FunctionalProgramming.FunctionalInterfaces;
 /*
-same as previous lesson, we are goingt obreakdown the BinaryOpeator
+same as previous lesson, we are going to breakdown the BinaryOperator
+
+binary  - has a method that takes in 2 input, process and return the result.
 */
 import java.util.List;
 import java.util.function.BinaryOperator;

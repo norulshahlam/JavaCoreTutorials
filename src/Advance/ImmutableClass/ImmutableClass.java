@@ -48,11 +48,12 @@ class Engine{
 }
 // a) make class as final
 public class ImmutableClass {
+  // b, c ) make variables as private & final
   private final int id;
   private final String name;
   private final Engine engine;
 
-  // b, c )make variables as private & final
+  // f) no setter
   public int getId() {
     return this.id;
   }
@@ -64,13 +65,14 @@ public class ImmutableClass {
   public ImmutableClass(int id, String name, Engine e) {
     this.id = id;
     this.name = name;
+    // e) deep copy
     Engine engine = new Engine(e.speed);
     this.engine=engine;
   }
 	public static void main(String[] args) {
 Engine e = new Engine(50);
     ImmutableClass a = new ImmutableClass(1, "shah", e);
-    // a.id=34;   //error - u cant change once initialize
+    // a.id=34;   // error - u cant change once initialize
     System.out.println(a.getName());
     System.out.println(a.engine.speed);
   }

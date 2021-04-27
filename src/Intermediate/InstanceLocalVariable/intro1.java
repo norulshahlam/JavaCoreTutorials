@@ -10,6 +10,7 @@ public class intro1 {
 
     Student A = new Student();
     System.out.println(A.name);
+   A.printName();
 	}
 }
 @SuppressWarnings("unused")

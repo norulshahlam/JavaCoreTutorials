@@ -6,9 +6,8 @@ package Collections.LoopingCollections;
 1. for loop
 2. iterator, 
 3. enhanced forloop
-4. Stream API
+4. static method reference
 5. forEach
-
 
 ‘Iterator’ is an interface which belongs to collection framework. It allows us to traverse the collection, 
 access the data element and remove the data elements of the collection 
@@ -29,7 +28,7 @@ public class intro1 {
     values.add(3254);
 
     System.out.println("\n1... ");
-    for(int i=0; i<values.size(); i++){
+    for (int i = 0; i < values.size(); i++) {
       System.out.println(values.get(i));
     }
 
@@ -41,11 +40,11 @@ public class intro1 {
     System.out.println("\n3... ");
     for (Object j : values)
       System.out.println(j);
-   
+
     System.out.println("\n4... ");
     values.forEach(System.out::println);
 
     System.out.println("\n5... ");
-    values.forEach(k->System.out.println(k));
+    values.forEach(k -> System.out.println(k));
   }
 }

@@ -1,7 +1,7 @@
 package Java8.MethodReference;
 
 /*
-1. after understanding about method reference, we know that we can use all static methods as arg inside anything ef System.out::println.
+1. after understanding about method reference, we know that we can use all static methods as arg inside anything ie System.out::println.
 we know that Integer is a class having static sum method so we can use Integer::sum. now we do the same for class String having static class toUpperCase() and much more
 
 2. also we introduce method reference to create new Supplier object

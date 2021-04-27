@@ -25,6 +25,7 @@ public class intro2 {
  System.out.println("***************");
  sortByLength(courses);
   }
+  
   //only distinct numbers
   private static void distinctNumbers(List<Integer> numbers) {
     numbers.stream()
@@ -38,13 +39,7 @@ public class intro2 {
     .sorted()
     .forEach(System.out::println);
   }
-  //sort numbers in asc
-  private static void sortReverseNumbers(List<Integer> numbers) {
-    numbers.stream()
-    .sorted(Comparator.reverseOrder())
-    .forEach(System.out::println);
-  }
-
+  
   //or both!
   private static void distinctSortNumbers(List<Integer> numbers) {
     numbers.stream()
@@ -52,8 +47,15 @@ public class intro2 {
     .sorted()
     .forEach(System.out::println);
   }
+  
+  //sort numbers in asc - custom sort
+  private static void sortReverseNumbers(List<Integer> numbers) {
+    numbers.stream()
+    .sorted(Comparator.reverseOrder())
+    .forEach(System.out::println);
+  }
 
-   //sort numbers in asc
+   //sort numbers in asc - custom sort
    private static void sortByLength(List<String> courses) {
     courses.stream()
     .sorted(Comparator.comparing(s->s.length()))

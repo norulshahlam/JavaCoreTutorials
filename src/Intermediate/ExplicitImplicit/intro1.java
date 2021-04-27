@@ -1,12 +1,10 @@
 package Intermediate.ExplicitImplicit;
-
 /*
 Explicit means somthing is done by the programmer
 Implicit means that its done by the complier.
-for example if you dont explicitly create a constructor for your class the compiler will implicitly create default one for you.
 
-For Example:
-Java will provide us default constructor implicitly.Even if the programmer didn't write code for constructor.
+for example:
+if you dont explicitly create a constructor for your class the compiler will implicitly provide a default one for you.
 
 Explicit is opposite to this , ie. programmer has to write .
 */

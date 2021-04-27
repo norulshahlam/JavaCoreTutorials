@@ -12,7 +12,9 @@ Interfaces are used to implement abstraction.
 
 So the question arises why use interfaces when we have abstract classes?
 
-The reason is, abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+The reason is, abstract classes may contain non-final variables, whereas variables in interface are 
+1. final 
+2. public and static.
 
 https://www.geeksforgeeks.org/interfaces-in-java/
 */
@@ -20,22 +22,21 @@ https://www.geeksforgeeks.org/interfaces-in-java/
 // A class that implements the interface.
 public class intro1 implements In1
 {
-    // Implementing the capabilities of
-    // interface.
+    
     public void display()
     {
         System.out.println("Geek");
     }
   
-    // Driver Code
+    
     public static void main (String[] args)
     {
         intro1 t = new intro1();
         t.display();
-        //we can access 'a' cos it is static
+        //we can access 'a' - 2. public and static.
         System.out.println(a);
 
-       // a++;  //but we cant change as it is final
+       // a++;  //1. final 
     }
 }
 

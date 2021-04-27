@@ -4,11 +4,14 @@ package Advance.ErrorHandling;
 /*
 1. u can use multiplr try/catch to print out different types of error
 2. with multiple catch, we can use diff catch to handle diff types of error when triggered. or use a generic method - (Exception e) 
+
+Example below - try-catch-catch-finally, try-catch-catch-finally, try-catch
 */
-public class MultipleTryCatch {
+public class MultipleTryCatch { 
   @SuppressWarnings("unused")
 	public static void main(String[] args) {
 
+		// SINGLE TRY WITH MUTIPLE CATCH
 		try {
 			int a = 1;
       // this gives arithmetic error
@@ -27,6 +30,8 @@ public class MultipleTryCatch {
 		finally{
       System.out.println(1);
     }
+
+			// SINGLE TRY WITH MUTIPLE CATCH
 		try {
       // array is created of size 1
 			int c[] = { 22 }; 
@@ -46,7 +51,7 @@ public class MultipleTryCatch {
         System.out.println(2);
       }
 		
-
+				// SINGLE TRY WITH SINGLE CATCH
 		try {
       // length is 38
 			String a = "the quick brown fox jumps over the box"; 
