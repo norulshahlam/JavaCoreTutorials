@@ -1,6 +1,4 @@
 package Intermediate.Annotations;
-
-
 /* 
 Introduced in java 1.5
 @Override annotation assures that the subclass method is overriding the parent class method. If it is not so, compile time error occurs. Sometimes, we does the silly mistake such as spelling mistakes etc. 

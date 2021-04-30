@@ -1,4 +1,4 @@
-package Intermediate.ReferenceVariable;
+package Intermediate.InstanceLocalVariable;
 /*
 insrtance vs local variable
 */
@@ -28,7 +28,7 @@ class test {
 	static int i;
 
 	public static void main(String[] args) {
-		// As i is an static variable it can be accessed directly without using any object
+		// As i is a static variable it can be accessed directly without using any object
 		System.out.println("Value before calling method1: " + i);
 		test t1 = new test();
 		t1.method1();

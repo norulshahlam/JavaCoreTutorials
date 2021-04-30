@@ -4,7 +4,8 @@ import java.util.HashSet;
 import java.util.Map;
 
 /*
-HashSet	HashMap
+HashSet vs	HashMap
+
 HashSet does’t allow duplicate values.	
 HashMap store key, value pairs and it does not allow duplicate keys. If key is duplicate then old key is replaced with new value.
 
@@ -56,6 +57,5 @@ public class intro1 {
     for (Map.Entry<Integer, Integer> data : hm.entrySet()) {
       System.out.println("HashMap:  " + data.getKey() + " : " + data.getValue());
     }
-
   }
 }

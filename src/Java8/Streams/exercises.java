@@ -2,10 +2,10 @@ package Java8.Streams;
 
 import java.util.Arrays;
 import java.util.stream.Collector;
+import java.util.stream.Stream;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
-import java.util.stream.Stream;
 
 /*
 some fun exercises
@@ -33,12 +33,12 @@ public class exercises {
     System.out.println(IntStream.range(1,10).sum());
     // 3. create a stream of range 1-10
     System.out.println(IntStream.rangeClosed(1,10).sum());
-    // 4. create a stream starting from 1, and inc by 5, 10 times, and get total sum
-    System.out.println(IntStream.iterate(1, e -> e+5).limit(10).sum());
+    // 4. create a stream starting from 0, and inc by 5, 10 times, and get total sum
+    System.out.println(IntStream.iterate(0, e -> e+5).limit(10).sum());
     // same as (4), only we can peek what is the value range
-    System.out.println(IntStream.iterate(1, e -> e+5).limit(10).peek(System.out::println).sum());
+    System.out.println(IntStream.iterate(0, e -> e+5).limit(10).peek(System.out::println).sum());
     // same as (4), only we ssstore into list
-    System.out.println(IntStream.iterate(1, e -> e+5).limit(10).boxed().collect(Collectors.toList()));
+    System.out.println(IntStream.iterate(0, e -> e+5).limit(10).boxed().collect(Collectors.toList()));
     // same as (4), only we use LongStream instead of IntStream to use large numbers
     System.out.println(LongStream.iterate(1, e -> e*500).limit(10).peek(System.out::println).sum());
   }

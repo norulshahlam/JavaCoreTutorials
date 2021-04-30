@@ -27,23 +27,27 @@ public class intro1 {
     values.add(3);
     values.add(3254);
 
+    // 1.
     System.out.println("\n1... ");
     for (int i = 0; i < values.size(); i++) {
       System.out.println(values.get(i));
     }
-
+    // 2.
     System.out.println("\n2... ");
     Iterator<Integer> i = values.iterator();
     while (i.hasNext())
       System.out.println(i.next());
 
+    // 3.
     System.out.println("\n3... ");
     for (Object j : values)
       System.out.println(j);
 
+    // 4.
     System.out.println("\n4... ");
     values.forEach(System.out::println);
 
+    // 5.
     System.out.println("\n5... ");
     values.forEach(k -> System.out.println(k));
   }

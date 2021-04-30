@@ -1,5 +1,7 @@
 package Intermediate.Aggregation;
-
+/*
+Aggregation
+*/
 public class intro2 {
 	public static void main(String[] args) {
 
@@ -12,23 +14,8 @@ public class intro2 {
 //
 //
 //
-
-
-
-class School {
-	String SchName;
-	String SchCountry;
-
-	public School(String schName, String schCountry) {
-		SchName = schName;
-		SchCountry = schCountry;
-	}
-
-	@Override
-	public String toString() {
-		return "School [SchName=" + SchName + ", SchCountry=" + SchCountry + "]";
-	}
-}
+//
+//
 
 class Student {
 	String name;
@@ -45,3 +32,19 @@ class Student {
 		return "Student [name=" + name + ", school=" + school + "]";
 	}
 }
+
+class School {
+	String SchName;
+	String SchCountry;
+
+	public School(String schName, String schCountry) {
+		SchName = schName;
+		SchCountry = schCountry;
+	}
+
+	@Override
+	public String toString() {
+		return "School [SchName=" + SchName + ", SchCountry=" + SchCountry + "]";
+	}
+}
+

@@ -15,7 +15,7 @@ public class ObjectCasting {
     //
     // Child c2 = new Parent(); //not allowed
     Parent p2 = new Child(); // upcasting
-    Parent p3 = c1; // allowed for upcasting
+    Parent p3 = c1; // upcasting
     p2.method1();
 
     // Child c3 = p2(); //not allowed for downcasting

@@ -1,6 +1,6 @@
 package Beginner.Objects;
 
-/*	object : copy of a class
+/*	object : copy / instance of a class
  * 	class : template/blueprint for an object. contains data and method
  * 	for this example, we use Employee class. alex, john,peter is an object
  */

@@ -1,6 +1,9 @@
 package Beginner.HashCode;
 
 /*
+
+hashCode() vs .equals()
+
 A hash code is an integer that is derived from an object. Hash codes should be scrambled—if x and y are two distinct objects, there should be a high probability that 
 x.hashCode() and y.hashCode() are different
 */

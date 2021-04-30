@@ -1,4 +1,5 @@
 package Java8.FunctionalProgramming.FunctionalInterfaces;
+
 /*
 same as previous lesson, we are going to breakdown the BinaryOperator
 
@@ -18,16 +19,17 @@ public class intro2 {
     int sum = numbers.stream().reduce(0, Integer::sum);
     System.out.println(sum);
 
-    // 2. behaviour parameterization
+    // 2. behaviour parameterization with method ref
     BinaryOperator<Integer> sumBinaryOperator2 = Integer::sum;
-    int sum2 = numbers.stream().reduce(0, sumBinaryOperator2); 
-    System.out.println(sum);
+    int sum2 = numbers.stream().reduce(0, sumBinaryOperator2);
+    System.out.println(sum2);
 
-    // 3. behaviour parameterization - more breakdown
+    // 3. behaviour parameterization with lambda
     BinaryOperator<Integer> sumBinaryOperator3 = (x, y) -> x + y;
     int sum3 = numbers.stream().reduce(0, sumBinaryOperator3);
-
-    // 4. behaviour parameterization - more breakdown
+    System.out.println(sum3);
+    //
+    // 4. behaviour parameterization - override func interface method
     BinaryOperator<Integer> sumBinaryOperator4 = new BinaryOperator<Integer>() {
       @Override
       public Integer apply(Integer a, Integer b) {
@@ -35,5 +37,6 @@ public class intro2 {
       }
     };
     int sum4 = numbers.stream().reduce(0, sumBinaryOperator4);
+    System.out.println(sum4);
   }
 }

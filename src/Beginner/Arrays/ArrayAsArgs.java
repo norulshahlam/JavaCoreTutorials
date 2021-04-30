@@ -1,6 +1,6 @@
 package Beginner.Arrays;
 /*
-How you manipulate the elements in array. here we try to add 5 to every element
+How you manipulate the elements in array. here we try to add 5 to every element dynamically
  */
 public class ArrayAsArgs 
 {

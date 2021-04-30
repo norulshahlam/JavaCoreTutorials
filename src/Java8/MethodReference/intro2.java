@@ -29,13 +29,13 @@ public class intro2 {
       }
     }
   }
-//  2. functional approach
+//  2. functional approach with method reference
   private static void printEvenNum2(List<Integer> numbers) {
    numbers.stream()
    .filter(intro2::isEven)
    .forEach(System.out::println);
 }
-//  3. functional approach - lambda
+//  3. functional approach - lambda & STATIC method reference
   private static void printEvenNum3(List<Integer> numbers) {
    numbers.stream()
    .filter(i->i%2==0)

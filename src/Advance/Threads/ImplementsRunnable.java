@@ -15,6 +15,8 @@ we will print the id of the thread for every iteration and its count value.
 we will see the diff result using sleep timer 
 when sleep is set, it is synchronised as shown in the console and is thread-safe
 when sleep is not set, the thread dont synchronise and thus is not thread-safe
+
+There is only a potential concurrency problem if one or more thread modifies shared state while another thread uses the same state. There is no shared state for the sleep() method.
 */
 public class ImplementsRunnable {
   public static void main(String[] args) {

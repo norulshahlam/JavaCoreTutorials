@@ -19,11 +19,15 @@ public class intro3 {
     {  
         //Create integer object  
         Integer i = new Integer("155");  
+        Integer j = new Integer("155");  
         //Returns hash code value determined from int val   
       System.out.println(i.hashCode());
+      System.out.println(j.hashCode());
 
       String a="123";
-      // returns random number
+      String b="123";
+      // returns random number. this number is based on string values so if 2 string has the same values, they have the same hashCode
       System.out.println(a.hashCode());
+      System.out.println(b.hashCode());
     }  
 }

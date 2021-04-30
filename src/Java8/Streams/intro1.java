@@ -45,7 +45,7 @@ public class intro1 {
     }
     return sum;
   }
-  // 2. functional approach
+  // 2. functional approach - method reference
   private static int getTotal2(List<Integer> numbers) {
 		return numbers.stream()
 		  .reduce(0, intro1::sum);		

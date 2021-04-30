@@ -2,7 +2,7 @@ package Collections.HashSetVsTreeSet;
 
 
 /*
-demonstrates the use of HashSet & TreeSet on its sorting & null
+demonstrates the use of HashSet & TreeSet & LinkedHashSet on its sorting & null values
  */
 import java.util.HashSet;
 import java.util.LinkedHashSet;

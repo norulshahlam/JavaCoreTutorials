@@ -39,8 +39,11 @@ public class Unboxing {
 /*
  * Unboxing:
  * 
- * What we see: Integer num2 = new Integer(50); int inum = num2;
+ * What we see: 
+		* Integer num2 = new Integer(50);
+		* int inum = num2;
  * 
- * What compiler does: Integer num2 = new Integer(50); int inum =
- * num2.intValue();
+ * What compiler does: 
+		* Integer num2 = new Integer(50); 
+		* int inum = num2.intValue();
  */

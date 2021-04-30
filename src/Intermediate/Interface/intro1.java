@@ -33,7 +33,7 @@ public class intro1 implements In1
     {
         intro1 t = new intro1();
         t.display();
-        //we can access 'a' - 2. public and static.
+        //2. we can access 'a' - public and static.
         System.out.println(a);
 
        // a++;  //1. final 
