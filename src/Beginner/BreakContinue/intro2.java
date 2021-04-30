@@ -1,7 +1,5 @@
 package Beginner.BreakContinue;
 
-package Beginner.BreakContinue;
-
 public class intro2 {
   public static void main(String[] args) {
 /*
