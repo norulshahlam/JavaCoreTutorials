@@ -8,13 +8,13 @@ max
 min
 */
 import java.util.List;
-import java.util.Optional;
+
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
 import java.util.stream.Stream;
 public class intro5SumAvgCount {
   
-  @SuppressWarnings("unused")
+  // @SuppressWarnings("unused")
   public static void main(String[] args) {
     List<Course> courses = List.of(
         new Course("Spring",        "Framework",     98, 20000),

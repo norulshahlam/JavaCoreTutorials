@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
   Because runnable is also a functional interface. There is just one abstract method which is present in here: run()
 */
 public class Threads1 {
-
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
     // 1.
     Runnable r = new Runnable() {
