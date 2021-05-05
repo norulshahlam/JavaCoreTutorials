@@ -4,7 +4,7 @@
 ### java assessment question on mar 2021
 ConcurrentHashMap in Java
  Immutable class - `ok`
-Java 8 Stream Intermediate Operations
+Java 8 Stream Intermediate Operations -  `ok`
 find duplicate elements in an array 
 HashMap
 Java equals() and hashCode()
@@ -25,14 +25,14 @@ Multiple Inheritance in java
 Exceptions
 - Checked exceptions, unChecked exceptions, Errors
 Synchronized
-Java 8 main Features - lambda
+Java 8 main Features - lambda `ok`
 java collections - hierarchy framework
 Spring main features - dependency injection
 Code Review Checklist
 SOLID Principles
 
 ### recently asked questions from viswa 29/1
-functional interface
+functional interface `ok`
 Java 8 Date
 Anonymous Class - `ok`
 Default Method
