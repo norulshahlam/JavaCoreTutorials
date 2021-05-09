@@ -12,6 +12,7 @@ What is a higher order function? A higher order function is a function which ret
  */
 
 public class intro1 {
+        @SuppressWarnings("unused")
   public static void main(String[] args) {
     List<Course> courses = List.of(
         new Course("Spring", "Framework", 98, 20000),
