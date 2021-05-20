@@ -21,7 +21,9 @@ public class TryWithResources5 {
       System.out.println("Enter something");
       String str = br.readLine();
       System.out.println("You typed: " + str);
-    } catch (Exception e) {
+    }
+    // YOU DONT NEED TO INCLUDE 'CATCH'
+    catch (Exception e) {
       System.out.println(e);
     }
 

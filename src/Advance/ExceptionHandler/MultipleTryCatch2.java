@@ -5,6 +5,8 @@ package Advance.ExceptionHandler;
 2. with multiple catch, we can use diff catch to handle diff types of error when triggered. or use a generic method - (Exception e) 
 
 Example below - try-catch-catch-finally, try-catch-catch-finally, try-catch
+
+important - if u r using multiple catch, makue sure the catch exception is in order of hierarchy - starting from subclasses to superclass 
 */
 public class MultipleTryCatch2 {
 	@SuppressWarnings("unused")
