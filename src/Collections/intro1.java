@@ -56,9 +56,8 @@ Dequeue Interface
   - Deque stands for a double-ended queue 
   - remove and add the elements from both the side. 
   --------------------------
-ArrayDeque
+ArrayDeque 
   - faster than ArrayList and Stack
-
 
 Set Interface
   - unordered set of elements
@@ -69,6 +68,17 @@ Set Interface
 -----------------------
 HashSet         unordered, less memory, more performance
 LinkedHashSet   ordered, more memory, less performance
+Hashtable       thread safe, doesn’t allow any null key or value
+HashMap         not-thread safe, allows one null key and multiple null values
+
+Hashtable - stores data using hashing algorithm
+
+https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/9565748#content
+
+Tree - stores data using Tree algorithm
+
+https://www.udemy.com/course/java-programming-tutorial-for-beginners/learn/lecture/9565750#content
+
 
 
 SortedSet Interface
@@ -86,54 +96,44 @@ public class intro1 {
   public static void main(String[] args) {
 
     /*
-    List Interface
-    1. store the ordered collection of objects. 
-    2. It can have duplicate values.
-    */
-    List <Integer> list1= new ArrayList<Integer>();  
-    List <Integer> list2 = new LinkedList<Integer>();  
-    List <Integer> list3 = new Vector<Integer>();  
-    List <Integer> list4 = new Stack<Integer>();  
+     * List Interface 1. store the ordered collection of objects. 2. It can have
+     * duplicate values.
+     */
+    List<Integer> list1 = new ArrayList<Integer>();
+    List<Integer> list2 = new LinkedList<Integer>();
+    List<Integer> list3 = new Vector<Integer>();
+    List<Integer> list4 = new Stack<Integer>();
 
     /*
-    Queue Interface
-    1. maintains the first-in-first-out order. 
-    2. ordered list 
-    */
+     * Queue Interface 1. maintains the first-in-first-out order. 2. ordered list
+     */
 
-    Queue<String> q1 = new PriorityQueue<String>();  
-    Queue<String> q2 = new ArrayDeque<String>();  
+    Queue<String> q1 = new PriorityQueue<String>();
+    Queue<String> q2 = new ArrayDeque<String>();
 
     /*
-    Deque Interface
-    1. Dremove and add the elements from both the side. 
-    2. "double-ended queue" - enables to perform the operations at both the ends.
-    */
-    
-    Deque<String> d = new ArrayDeque<String>();  
+     * Deque Interface 1. Dremove and add the elements from both the side. 2.
+     * "double-ended queue" - enables to perform the operations at both the ends.
+     */
+
+    Deque<String> d = new ArrayDeque<String>();
 
     /*
-    Set Interface
-    1. unordered set of elements 
-    2. no duplicate items.
-    3. store at most one null value 
-    */
+     * Set Interface 1. unordered set of elements 2. no duplicate items. 3. store at
+     * most one null value
+     */
 
-    Set<Integer> s1 = new HashSet<Integer>();  
-    Set<Integer> s2 = new LinkedHashSet<Integer>();  
-    Set<Integer> s3 = new TreeSet<Integer>();  
-
+    Set<Integer> s1 = new HashSet<Integer>();
+    Set<Integer> s2 = new LinkedHashSet<Integer>();
+    Set<Integer> s3 = new TreeSet<Integer>();
 
     /*
-    SortedSet Interface
-    1. alternate of Set interface 
-    2. provides a total ordering on its elements.
-    3. arranged in the increasing (ascending) order.
-    4. has additional methods that inhibit the natural ordering of the elements.
-
-*/
-    SortedSet<Integer> set = new TreeSet<Integer> ();  
-
+     * SortedSet Interface 1. alternate of Set interface 2. provides a total
+     * ordering on its elements. 3. arranged in the increasing (ascending) order. 4.
+     * has additional methods that inhibit the natural ordering of the elements.
+     * 
+     */
+    SortedSet<Integer> set = new TreeSet<Integer>();
 
   }
 }
