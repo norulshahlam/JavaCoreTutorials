@@ -21,11 +21,11 @@ public class StreamParallelization {
   public static void main(String[] args) {
 
     long time = System.currentTimeMillis();
-    // 0 -100000000000
+    // generate 0 -100000000000 using stream()
     System.out.println(LongStream.range(0, Integer.MAX_VALUE).sum());
     System.out.println(System.currentTimeMillis() - time);
     long time2 = System.currentTimeMillis();
-    // 0 -100000000000
+    // generate 0 -100000000000 using stream()
     System.out.println(LongStream.range(0, Integer.MAX_VALUE).parallel().sum());
     System.out.println(System.currentTimeMillis() - time2);
 

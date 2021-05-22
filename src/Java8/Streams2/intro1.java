@@ -3,6 +3,18 @@ package Java8.Streams2;
 import java.util.List;
 
 /*
+
+1. Streams have a strong affinity with functions.
+Java 8 introduces lambdas and functional interfaces, which opens a whole toybox of powerful techniques. Streams provide the most convenient and natural way to apply functions to sequences of objects.
+
+2. Streams encourage less mutability. 
+This is sort of related to the functional programming aspect-- the kind of programs you write using streams tend to be the kind of programs where you don't modify objects.
+
+3. Streams encourage looser coupling. 
+Your stream-handling code doesn't need to know the source of the stream, or its eventual terminating method.
+
+********************************
+
 reduce operation applies a binary operator to each element in the stream where the first argument to the operator is the return value of the previous application and second argument is the current stream element.
 
 sum(), min(), max(), count() etc. are some examples of reduce operations. reduce() explicitly asks you to specify how to reduce the data that made it through the stream.
