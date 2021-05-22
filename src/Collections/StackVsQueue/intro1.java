@@ -32,14 +32,18 @@ public class intro1 {
 		st.add(9);
 		st.add(2);
 		st.add(1);
-		st.forEach(i -> System.out.println("Stack:  " + i));
+		System.out.println(st);
+		System.out.println(st.pop());
+		System.out.println(st);
 
 		Queue<Integer> q = new ArrayDeque<Integer>();
 		q.add(4);
 		q.add(9);
 		q.add(2);
 		q.add(1);
-		q.forEach(i -> System.out.println("ArrayDeque:  " + i));
+		System.out.println(q);
+		System.out.println(q.remove());
+		System.out.println(q);
 
 	}
 }

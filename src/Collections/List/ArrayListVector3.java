@@ -23,7 +23,7 @@ ArrayList is not legacy, Vector is.
 
 Speed
 ArrayList is faster being non-syncronized.
-ArrayList is slower being syncronized.
+Vector is slower being syncronized.
 
 Iteration
 ArrayList uses iterator interface to traverse through elements.

@@ -13,7 +13,7 @@ In a similar way, a lower bounded wildcard restricts the unknown type to be a sp
 https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html
 
 */
-public class lowerBound1 {
+public class lowerBound4 {
 
   // this means any classes and its super class can be used
   public static void addCat(List<? super Cat> catList) {

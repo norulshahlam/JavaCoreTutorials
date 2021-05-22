@@ -10,7 +10,7 @@ You can use an upper bounded wildcard to relax the restrictions on a variable. F
 https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html
 
 */
-public class upperbound {
+public class upperbound3 {
   public static void main(String[] args) {
     total(List.of(1, 2, 3, 4, 5));
     total(List.of(1.5, 2.6, 3.1, 4.9, 5.2));
@@ -22,7 +22,9 @@ public class upperbound {
     Long c = 35456445l;
   }
 
-  // a. here, anything that can extend Numbers can be used eg int,float,long
+  // a. previously u can add only 1 type here but now we any type that extend
+  // Numbers can be used eg int,float,long
+  // static void total(List<Integer> list) {
   static void total(List<? extends Number> n) {
 
     double sum = 0.00;

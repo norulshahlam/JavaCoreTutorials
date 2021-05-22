@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
+
+The Java Map interface, java.util.Map, represents a mapping between a key and a value. More specifically, a Java Map can store pairs of keys and values. Each key is linked to a specific value. Once stored in a Map, you can later look up the value using just the key.
+
+The Java Map interface IS NOT a subtype of the Collection interface. Therefore it behaves a bit different from the rest of the collection types
+
+
 Hashmap
 - unsorted, unordered
 - hashcode is used

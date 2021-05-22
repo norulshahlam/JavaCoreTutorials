@@ -1,4 +1,4 @@
-package Collections.Comparator;
+package Collections.Sort;
 
 import java.util.Arrays;
 /* Java provides two interfaces to sort objects using data members of the class:
@@ -41,7 +41,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class intro1 {
+public class Comparator1 {
 
 	public static void main(String[] args) {
 

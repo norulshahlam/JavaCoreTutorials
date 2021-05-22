@@ -25,11 +25,11 @@ treemap
 - maintain insertion order
 - implements navigableMap
 
-example - basic functions of Map
+example - basic functions of HashMap
 
 */
 
-public class hashmap1 {
+public class hashmap2 {
 
   public static void main(String[] args) {
 

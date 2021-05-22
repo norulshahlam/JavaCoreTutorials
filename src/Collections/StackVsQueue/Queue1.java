@@ -10,7 +10,7 @@ public class Queue1 {
 
     Queue<String> q = new PriorityQueue<String>();
 
-    // Retrieves and removes the head of this queue, or returns null if this queue
+    // return while removes the head of this queue, or returns null if this queue
     // is empty.
     System.out.println(q.poll());
 

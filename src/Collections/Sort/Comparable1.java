@@ -1,4 +1,4 @@
-package Collections.Comparable;
+package Collections.Sort;
 
 /* Java provides two interfaces to sort objects using data members of the class:
  Comparable & Comparator
@@ -27,9 +27,9 @@ package Collections.Comparable;
  For Comparable, don’t need to make any code changes at client side for using Arrays.sort() or Collection.sort() methods automatically uses the compareTo() method of the class. 
  For Comparator, client needs to provide the Comparator class to use in compare() method.
  
- demo how to use comparable (not comparator) comparing only 1 element	sort from highest marks to lowest	
+ demo how to use comparable (not comparator) comparing only 1 element	sort from highest age to lowest	
  a) your Student class must implement comparable
- b) override compareTo() to define your sorting logic ie by rollno / marks
+ b) override compareTo() to define your sorting logic ie by rollno / age
  c) use this overridden method by calling sort() 
  */
 
@@ -37,22 +37,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class intro1 {
+public class Comparable1 {
 	public static void main(String[] args) {
 
 		List<Student> stud = new ArrayList<Student>();
-		stud.add(new Student(1, 55));
-		stud.add(new Student(2, 45));
-		stud.add(new Student(3, 63));
-		stud.add(new Student(4, 92));
-		stud.add(new Student(5, 21));
+		stud.add(new Student(101, "Vijay", 23));
+		stud.add(new Student(106, "Ajay", 27));
+		stud.add(new Student(109, "ashish", 18));
+		stud.add(new Student(105, "Jai", 21));
 		for (Student t : stud) {
-			System.out.println("rollno:" + t.rollno + " marks:" + t.marks);
+			System.out.println("rollno:" + t.rollno + " age:" + t.age);
 		}
 		// c) NOTE: class will be modified!
 		Collections.sort(stud);
 		for (Student t : stud) {
-			System.out.println("After sort - rollno:" + t.rollno + " marks:" + t.marks);
+			System.out.println("After sort - rollno:" + t.rollno + " age:" + t.age);
 		}
 
 	}
@@ -61,38 +60,41 @@ public class intro1 {
 // a)
 class Student implements Comparable<Student> {
 	int rollno;
-	int marks;
+	String name;
+	int age;
 
-	public Student(int rollno, int marks) {
+	public Student(int rollno, String name, int age) {
 		super();
+
 		this.rollno = rollno;
-		this.marks = marks;
+		this.name = name;
+		this.age = age;
+
 	}
 
 	@Override
 	public String toString() {
-		return "student [rollno=" + rollno + ", marks=" + marks + "]";
+		return "student [rollno=" + rollno + ", age=" + age + "]";
 	}
 
 	@Override // b)
 	public int compareTo(Student s) {
-		System.out.println("this.marks: " + this.marks + " , marks: " + s.marks);
-		// a. ternary operator.
-		// b. return this.marks > s.marks ? -1 : this.marks < s.marks ? 1 : 0;
 
-		return Integer.compare(this.marks, s.marks);
+		// a. ternary operator.
+		// b. return this.age > s.age ? -1 : this.age < s.age ? 1 : 0;
+
+		return Integer.compare(this.age, s.age);
 	}
 }
 /*
- * a. how it works for: return this.marks > s.marks ? -1 : this.marks < s.marks
- * ? 1 : 0;
+ * a. how it works for: return this.age > s.age ? -1 : this.age < s.age ? 1 : 0;
  * 
  * Compares this object with the specified object for order. Returns a negative
  * integer, zero, or a positive integer if this object is less than, equal to,
  * or greater than the specified object.
  * 
- * b. or u can use Integer.compare. Based on the current order and variable, we
- * are sorting by marks, in inc order. for dec order, juat reverse the order of
- * the arg. to sorrt by rollno, use rollno instead of marks
+ * b. or u can use Integer.compare(). Based on the current order and variable,
+ * we are sorting by age, in inc order. for dec order, juat reverse the order of
+ * the arg. to sorrt by rollno, use rollno instead of age
  * 
  */

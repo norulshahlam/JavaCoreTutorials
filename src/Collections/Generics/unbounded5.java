@@ -16,7 +16,7 @@ The unbounded wildcard type is specified using the wildcard character (?), for e
 https://docs.oracle.com/javase/tutorial/java/generics/unboundedWildcards.html
 
 */
-public class unbounded {
+public class unbounded5 {
 
   public static void main(String[] args) {
     List<Integer> li = Arrays.asList(1, 2, 3);
@@ -31,20 +31,17 @@ public class unbounded {
   }
 
   /*
-   * The goal of printList is to print a list of any type, but it fails to achieve
-   * that goal — it prints only a list of Object instances; it cannot print
-   * List<Integer>, List<String>, List<Double>, and so on, because they are not
-   * subtypes of List<Object>. To write a generic printList method, use List<?>:
+   * The goal of printList2 is to print a list of any type, but it fails to
+   * achieve that goal — it prints only a list of Object instances; it cannot
+   * print List<Integer>, List<String>, List<Double>, and so on, because they are
+   * not subtypes of List<Object>. To write a generic printList method, use
+   * List<?>:
    */
-  public static void printList2(List<Object> list) {
-    for (Object elem : list)
-      System.out.println(elem + " ");
-    System.out.println();
+  public static void printList2(List<Object> l) {
+    l.forEach(System.out::println);
   }
 
-  public static void printList(List<?> list) {
-    for (Object elem : list)
-      System.out.print(elem + " ");
-    System.out.println();
+  public static void printList(List<?> l) {
+    l.forEach(System.out::println);
   }
 }

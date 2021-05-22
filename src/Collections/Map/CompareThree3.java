@@ -33,7 +33,7 @@ example - basic functions of Map
 
 */
 
-public class CompareThree2 {
+public class CompareThree3 {
 
   public static void main(String[] args) {
 

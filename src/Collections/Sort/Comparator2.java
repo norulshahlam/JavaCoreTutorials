@@ -1,4 +1,4 @@
-package Collections.Comparator;
+package Collections.Sort;
 
 /*
 this is the same as previous demo.
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class intro2 {
+public class Comparator2 {
   public static void main(String args[]) {
     ArrayList<Student> al = new ArrayList<Student>();
     al.add(new Student(101, "Vijay", 23));
@@ -53,17 +53,5 @@ class sortByAgeDesc implements Comparator<Student> {
 class sortByName implements Comparator<Student> {
   public int compare(Student s1, Student s2) {
     return s1.name.compareTo(s2.name);
-  }
-}
-
-class Student {
-  int rollno;
-  String name;
-  int age;
-
-  Student(int rollno, String name, int age) {
-    this.rollno = rollno;
-    this.name = name;
-    this.age = age;
   }
 }
