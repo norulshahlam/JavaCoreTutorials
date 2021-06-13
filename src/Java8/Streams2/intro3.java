@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 /*
 toList - accumulates the input elements into a new List
 
-***** SUMMARY ********
+***** SUMMARY ******** 
 
 Map: returns an array of pieces of information from the original array. In the callback function, return the data you wish to be part of the new array. 
 
