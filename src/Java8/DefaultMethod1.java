@@ -21,7 +21,7 @@ interface d {
 
 public class DefaultMethod1 implements d {
 
-  // this is implemented here, out of the main String class
+  // implement abstract method here.
   public void eat() {
     System.out.println("eating in interface a");
   }
@@ -29,7 +29,7 @@ public class DefaultMethod1 implements d {
   public static void main(String[] args) {
     DefaultMethod1 d = new DefaultMethod1();
 
-    d.show(); // this is already implemented earlier
-    d.eat(); // this was implemented in class
+    d.show(); // default method
+    d.eat(); // implemented in class
   }
 }

@@ -1,8 +1,12 @@
 package Java8;
 
-/*
- * this is to show that static method in interface can be called right away in
- * main method
+/* 
+The static keyword is used to create methods that will exist independently of 
+any instances created for the class. Static methods do not use any instance 
+variables of any object of the class they are defined in.
+
+this is to show that static method in interface can be called right away in
+main method
  */
 interface i {
 
