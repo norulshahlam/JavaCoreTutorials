@@ -19,8 +19,9 @@ public class intro1 {
     task1 t1 = new task1();
     task2 t = new task2();
     Thread t2 = new Thread(t);
-    t1.start();
-    t2.start();
+    // t1.start();
+    // t2.start();
+    t2.run();
     System.out.print("n1 start\n");
     for (int i = 1; i < 100; i++) {
       System.out.print("n" + i + " ");
