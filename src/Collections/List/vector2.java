@@ -44,10 +44,12 @@ public class vector2 {
     vec.add("eggfruit");
 
     System.out.println("size: " + vec.size() + ", capacity: " + vec.capacity());
-    // capacity is the available space given to the current array. it will 2X if
-    // exceed current capacity. once size exceed initial capacity, it will inc to
-    // 100% of the initial capacity ie times 2 from the initial size given by user
-    // during creation
+    /*
+     * capacity is the available space given to the current array. it will 2X if
+     * exceed current capacity. once size exceed initial capacity, it will inc to
+     * 100% of the initial capacity ie times 2 from the initial size given by user
+     * during creation
+     */
 
     System.out.println("elements: " + vec);
 
