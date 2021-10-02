@@ -16,9 +16,7 @@ public class coding1 {
 
 		System.out.println(l.get(b));
 
-	int findMiddleElement(ListNode<Integer> l) {
-		
-	}
+	
 		/*
 		 * int findMiddleElement(ListNode<Integer> l) {
 		 * 

@@ -16,7 +16,7 @@ public class ArrayList3 {
 		num.add(9);
 		num.add(6);
 		for (int i : num)
-			System.out.println("1st method" + i);
+			System.out.println("1st method: " + i);
 
 		// method 2. if you know the values you can add during instantiation
 		List<Integer> num2 = Arrays.asList(3, 9, 6);

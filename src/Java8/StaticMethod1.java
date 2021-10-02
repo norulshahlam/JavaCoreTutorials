@@ -13,6 +13,9 @@ interface i {
   static void show() { // here is the static method, implemented.
     System.out.println("interface i");
   }
+  static void show2() { // here is the static method, implemented.
+    System.out.println("interface i");
+  }
 }
 
 public class StaticMethod1 implements i {

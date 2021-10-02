@@ -8,6 +8,9 @@ interface d {
   default void show() {
     System.out.println("showing in interface a");
   }
+  default void show2() {
+    System.out.println("showing in interface a");
+  }
 
   // method will be implemented later upon implemented
   void eat();

@@ -37,7 +37,7 @@ public class LinkedList1 {
 		val.add("world");
 		val.add("my");
 		val.add("name");
-		val.add("is");
+		val.add(null);
 		val.add("shah");
 		val.add("shah");
 		System.out.println(val + "\n");

@@ -35,14 +35,12 @@ public class intro1 {
 
                 // 2nd layer
                 Predicate<Course> reviewScoreGreaterThan95Predicate = course -> course.getReviewScore() > 95;
-
                 System.out.println(courses.stream().allMatch(reviewScoreGreaterThan95Predicate));
 
                 // 3. higher order function
                 //
                 // a - define Predicate that returns a function
                 Predicate<Course> reviewScoreGreaterThan95Predicate2 = createPredicateWithCutoffReviewScore(95);
-
                 Predicate<Course> reviewScoreGreaterThan90Predicate2 = createPredicateWithCutoffReviewScore(90);
 
                 // c - call the function
