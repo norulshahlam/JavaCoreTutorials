@@ -38,11 +38,11 @@ public class vector2 {
     Vector<String> vec = new Vector<String>(3);
     System.out.println("size: " + vec.size() + ", capacity: " + vec.capacity());
     vec.add("apple"); // maintain insertion order
-    vec.add("banana");
-    vec.add("carrot");
-    vec.add("durian");
     vec.add("eggfruit");
-
+    vec.add("banana");
+    vec.add("durian");
+    vec.add("carrot");
+System.out.println(vec);
     System.out.println("size: " + vec.size() + ", capacity: " + vec.capacity());
     /*
      * capacity is the available space given to the current array. it will 2X if
@@ -58,7 +58,7 @@ public class vector2 {
     vec.add(0, "zebra"); // add element to a specific index
     System.out.println("newl elements: " + vec);
 
-    System.out.println("size is: " + vec.size() + ", capacity is: " + vec.capacity());
+    System.out.println("new size is: " + vec.size() + ", capacity is: " + vec.capacity());
 
   }
 }
