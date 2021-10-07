@@ -14,6 +14,7 @@ public class CreateArray {
 
 		// method #2 - elements are added upon creation of arrays
 		int array2[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; 
+		System.out.println("aaa"+array2[3]);
 
     // adding elements by using for loop
 		for (int a = 0; a < array1.length; a++) { 

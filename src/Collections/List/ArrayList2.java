@@ -26,6 +26,8 @@ public class ArrayList2 {
 		for (Object k : values)
 			System.out.println(k);
 
+			System.out.println("dddd");
+
 	}
 
 }

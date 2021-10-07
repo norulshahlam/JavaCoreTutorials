@@ -24,7 +24,7 @@ class Journey {
 }
 
 class Car {
-  //1. For example if Car class travel() method change to journey(),
+  //1. For example if Car class travel() method name change to journey(),
 	public void travel() { 
 		System.out.println("Travel by Car"); 
 	}
