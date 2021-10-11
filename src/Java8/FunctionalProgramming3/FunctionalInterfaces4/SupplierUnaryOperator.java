@@ -23,7 +23,7 @@ Taking an input and giving an output is a function.
 Taking an input but no output (returning void) is a consumer.
 
 2. Supplier is the opposite. Supplier is the situation where you don't have any input. So, you won't have any parameters as input and what do you want to do is, we'd want to return something back. 
-
+ 
 Recap - 
 
 predicate - has a method that takes in 1 input & returns bolean
