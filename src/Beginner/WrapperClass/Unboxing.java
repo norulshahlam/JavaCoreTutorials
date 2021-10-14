@@ -19,7 +19,7 @@ public class Unboxing {
 	@SuppressWarnings({ "unused", "deprecation" })
 	public static void main(String[] args) {
 
-		Integer inum = new Integer(100);
+		Integer inum = Integer.valueOf(100);
 
 		/*
 		 * CASE 1: passed Integer wrapper class object, it would be converted to int
@@ -27,7 +27,7 @@ public class Unboxing {
 		 */
 		myMethod(inum);
 		// Case 2: Assignments
-		Integer inum2 = new Integer(5);
+		Integer inum2 = Integer.valueOf(5);
 		int num = inum2; // unboxing object to primitive conversion
 
 		// Case 3: While dealing with collection classes:
