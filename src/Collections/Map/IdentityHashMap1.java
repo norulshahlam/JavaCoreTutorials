@@ -14,18 +14,18 @@ public class IdentityHashMap1 {
 
     // this is considered duplicate key
     Map<Integer, String> map1 = new HashMap<>();
-    map1.put(new Integer(2), "shah");
-    map1.put(new Integer(1), "rabika");
-    map1.put(new Integer(1), "cindi");
-    map1.put(new Integer(1), "yayas");
+    map1.put(Integer.valueOf(2), "shah");
+    map1.put(Integer.valueOf(1), "rabika");
+    map1.put(Integer.valueOf(1), "cindi");
+    map1.put(Integer.valueOf(1), "yayas");
     System.out.println(map1);
 
     // this is NOT considered duplicate key
     Map<Integer, String> map2 = new IdentityHashMap<>();
-    map2.put(new Integer(2), "shah");
-    map2.put(new Integer(1), "rabika");
-    map2.put(new Integer(1), "cindi");
-    map2.put(new Integer(1), "yayas");
+    map2.put(Integer.valueOf(2), "shah");
+    map2.put(Integer.valueOf(1), "rabika");
+    map2.put(Integer.valueOf(1), "cindi");
+    map2.put(Integer.valueOf(1), "yayas");
     System.out.println(map2);
   }
 }

@@ -12,7 +12,7 @@ public class BoxingUnboxing {
 		int a = 1;
 		int b = 2;
 
-		Integer A = new Integer(a);	//manual boxing
+		Integer A = Integer.valueOf(a);	//manual boxing
 		Integer B = b;	//auto boxing
 		
 		int c = B.intValue();	//manual unboxing
