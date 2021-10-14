@@ -15,8 +15,8 @@ public class Unboxing {
 	public static void myMethod(int num) {
 		System.out.println(num);
 	}
+	@SuppressWarnings({ "unused" })
 
-	@SuppressWarnings({ "unused", "deprecation" })
 	public static void main(String[] args) {
 
 		Integer inum = Integer.valueOf(100);
