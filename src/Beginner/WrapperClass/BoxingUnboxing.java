@@ -6,7 +6,7 @@ Data structures in the Collection framework, such as ArrayList, LinkedList and V
 The wrapper classes are immutable—you cannot change a wrapped value after the wrapper has been constructed. They are also final, so you cannot subclass them.
  */
 public class BoxingUnboxing {
-	@SuppressWarnings({"unused","deprecation"})
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 	
 		int a = 1;

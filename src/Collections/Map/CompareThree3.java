@@ -51,6 +51,7 @@ public class CompareThree3 {
     System.out.println("\nTreeMap - auto sort by key \n" + tm);
 
   }
+  @SuppressWarnings("unused")
 
   private synchronized static void generate(Map<String, Integer> hm, Map<String, Integer> lhm,
       Map<String, Integer> tm) {

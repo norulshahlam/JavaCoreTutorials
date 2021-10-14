@@ -4,7 +4,7 @@ package Beginner.Arrays;
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. 
 */
 public class CreateArray {
-  @SuppressWarnings("unused")
+
 	public static void main(String[] args) {
 
 		int add = 0;

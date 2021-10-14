@@ -28,6 +28,7 @@ LinkedList
 import java.util.Vector;
 
 public class ArrayListLinkedList2 {
+  @SuppressWarnings("unused")
 
   public static void main(String[] args) throws IOException {
 

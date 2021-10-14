@@ -21,6 +21,7 @@ public class lowerBound4 {
     System.out.println("Cat Added");
   }
 
+  @SuppressWarnings("unused")
   public static void main(String[] args) {
 
     // create list according to classes

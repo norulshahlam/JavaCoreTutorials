@@ -11,6 +11,8 @@ https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html
 
 */
 public class upperbound3 {
+  @SuppressWarnings("unused")
+
   public static void main(String[] args) {
     total(List.of(1, 2, 3, 4, 5));
     total(List.of(1.5, 2.6, 3.1, 4.9, 5.2));

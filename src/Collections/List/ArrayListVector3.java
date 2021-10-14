@@ -1,9 +1,7 @@
 package Collections.List;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 /*
 LIST
 a. we will see the implementation of list 

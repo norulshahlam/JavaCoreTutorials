@@ -1,6 +1,6 @@
-package Beginner.HashCode;
+package Beginner.Objects;
 
-public class intro4 {
+public class HashCode1 {
 
 	public static void main(String[] args) {
 	

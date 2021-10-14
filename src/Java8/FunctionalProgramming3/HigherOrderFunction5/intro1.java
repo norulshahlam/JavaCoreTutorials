@@ -1,9 +1,7 @@
 package Java8.FunctionalProgramming3.HigherOrderFunction5;
 
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.List;
+import java.util.function.Predicate;
 
 /*
 understand a very important functional concept called Higher Order Functions.
@@ -12,7 +10,6 @@ What is a higher order function? A higher order function is a function which ret
  */
 
 public class intro1 {
-        @SuppressWarnings("unused")
         public static void main(String[] args) {
                 List<Course> courses = List.of(new Course("Spring", "Framework", 98, 20000),
                                 new Course("Spring Boot", "Framework", 95, 18000),

@@ -13,6 +13,8 @@ package Advance.Threads;
  * run this to see who / show they start off
  */
 public class intro1 {
+  @SuppressWarnings({"unused"})
+
   public static void main(String[] args) {
     System.out.println("***********************");
 

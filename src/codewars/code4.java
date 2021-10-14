@@ -1,11 +1,5 @@
 package codewars;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 public class code4 {
   public static void main(String[] args) {
     // String str = "4556364607935616";

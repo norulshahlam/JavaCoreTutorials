@@ -19,6 +19,8 @@ with method 2, u can use the attribute() to search diff criteria like
    */
 public class filter2 {
 
+  @SuppressWarnings({"unused"})
+
   public static void main(String[] args) throws IOException {
 
     Path currentDirectory = Paths.get(".");

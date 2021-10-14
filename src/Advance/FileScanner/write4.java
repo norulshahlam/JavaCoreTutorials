@@ -16,6 +16,7 @@ in practice, we dont read all. we read certain content using filter so we remove
 2. stream approach - lowercase all content, get only word contain 'a'
  */
 public class write4 {
+  @SuppressWarnings({"unused"})
 
   public static void main(String[] args) throws IOException {
 

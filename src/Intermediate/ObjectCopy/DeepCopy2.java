@@ -1,7 +1,5 @@
 package Intermediate.ObjectCopy;
 
-import java.util.Arrays;
-
 /*
 In object-oriented programming, object copying is creating a copy of an existing object, the resulting object is called an object copy or simply copy of the original object
 
@@ -10,6 +8,7 @@ https://www.geeksforgeeks.org/deep-shallow-lazy-copy-java-examples/#:~:text=In%2
 we deep copy using Copy Constructor
 */
 public class DeepCopy2 {
+  @SuppressWarnings({"unused"})
 
   public static void main(String[] args) {
     Complex c1 = new Complex(10, 15);
