@@ -39,5 +39,9 @@ public class HashCode2 {
     /* String/Number having diff value usually has diff hashcode */
     System.out.println(a.equals(c));
     System.out.println(i.equals(k));
+
+    /* equal() only applies to wrapper class! */
+    int f=1,g=1;
+    // System.out.println(f.equals(g)); // gives error
   }
 }
