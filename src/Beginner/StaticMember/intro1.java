@@ -1,8 +1,10 @@
-package Beginner.StaticVariable;
+package Beginner.StaticMember;
 /*
 static var means variable is shared / accessible among all obj of the same class. if any object changes that static variable, it will affect other object too
-
 instance variables is th opposite - has its own copy of variable aka fields/member variables
+
+Static - class level
+non-static - object level
  */
 class employee {
 	int id;
