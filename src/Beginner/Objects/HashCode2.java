@@ -32,6 +32,7 @@ public class HashCode2 {
      */
     System.out.println(i.equals(j));
     System.out.println(a.equals(b));
+    System.out.println(i==j); // false as '==' is reference comparison (address comparison)
 
     System.out.println("i: " + i.hashCode() + ", j: " + j.hashCode() + ", k: " + k.hashCode());
     System.out.println("a: " + a.hashCode() + ", b: " + b.hashCode() + ", c: " + c.hashCode());

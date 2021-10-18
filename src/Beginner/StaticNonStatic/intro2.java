@@ -1,4 +1,4 @@
-package Beginner.StaticMember;
+package Beginner.StaticNonStatic;
 /*
 1. static var means variable is shared / accessible among all obj of the same class. if any object changes that static variable, it will affect other object too
 2. non-static (instance) variables is the opposite - has its own copy of variable aka fields/member variables
