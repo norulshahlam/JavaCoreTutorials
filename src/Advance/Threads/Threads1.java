@@ -1,4 +1,4 @@
-package Java8.FunctionalProgramming3;
+package Advance.Threads;
 
 import java.util.stream.IntStream;
 

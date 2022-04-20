@@ -15,11 +15,24 @@ functional programming, writing highly performant code is much much more easier.
 */
 public class lazyStreams {
   public static void main(String[] args) {
-    List<String> courses = List.of("Spring", "Spring Boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker",
-        "Kubernetes");
+    List<String> courses = List.of(
+      "Spring",
+      "Spring Boot",
+      "API",
+      "Microservices",
+      "AWS",
+      "PCF",
+      "Azure",
+      "Docker",
+      "Kubernetes");
 
-    Optional<String> a = courses.stream().peek(System.out::println).filter(c -> c.length() > 11)
-        .map(String::toUpperCase).peek(System.out::println).findFirst();
+    Optional<String> a = courses
+      .stream()
+      .peek(System.out::println)
+      .filter(c -> c.length() > 11)
+      .map(String::toUpperCase)
+      .peek(System.out::println)
+      .findFirst();
 
     System.out.println(a);
   }
