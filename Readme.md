@@ -4,6 +4,40 @@ Contains almost all java core lessons and examples
 
 Below: Outstanding need to learn as this questions are asked during interview
 
+### java assessment question on 9 May 2022
+
+what is java
+Mark-and-Sweep: Garbage Collection
+pros and cons of Garbage Collector
+four garbage collectors - Serial, parallel, CMS, G1
+three types of Java Classloader
+Annotations in Java
+Java Reflection - can we change the modifier?
+Java Enums does it have attributes and methods?
+Differences between Exception and Error
+The try-with-resources statement
+Java Collections – Time Complexity
+How to create Immutable class
+sorting HashMap
+hashCode() & equals() method in HashMap
+Internal Working of HashMap
+Configure Multiple Data Sources in a Spring Boot
+Spring - Bean Scopes
+
+**********************
+
+what is react js
+how to pass data from parent to child component
+how to pass data from child to parent component
+how to pass data from sibling to sibling component
+what is react props
+Differences between Functional Components and Class Components
+How do you handle state in functioanal and class components?
+types of reach hooks
+what is useContext
+ReactJS Reconciliation
+higher order component react use case
+
 ### java assessment question on mar 2021
 
 ConcurrentHashMap in Java
